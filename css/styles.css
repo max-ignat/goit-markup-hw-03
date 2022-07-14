@@ -9,6 +9,7 @@
     --team-bcg : #F5F4FA;
     --primary-font: 'Roboto', sans-serif;
     --logo-font : 'Raleway', sans-serif;
+    --inner-border-color: ##EEEEEE;
 }
 p,
 h1,
@@ -68,12 +69,15 @@ a  {
 }
 .container {
     width: 1200px;
-    /* padding-left: 15px;
-    padding-right: 15px; */
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
-
-
+.adv-section,
+.activities-section,
+.team {
+    padding-left: 215px;
+}
 /* logo */
 .logo {
     font-weight: 700;
@@ -100,8 +104,12 @@ color: var(--accent-color);
 
 /* site nav */
 .site-nav {
+    
     outline: 1px solid red;
     
+}
+.list.nav {
+    display: flex;
 }
 .contact-list {
     background-color: yellowgreen;
@@ -131,6 +139,8 @@ color: var(--accent-color);
 .header-title {
     padding-top: 203px;
     margin-bottom: 30px;
+    min-width: 696px;
+    
     
     outline: 1px solid violet;
     font-weight: 900;
@@ -221,13 +231,29 @@ color: var(--accent-color);
 }
 .list.activities {
     display: flex;
-    
+    /* margin-top: 94px;
+    margin-left: 495px;
+    margin-bottom: 49px; */
+    justify-content: center;
+    outline: 1px solid black;
+
     
 }
 .list {
     font-style: normal;
     margin: 0px;
     padding: 0px;
+}
+
+.list.project {
+    outline: 2px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    /* margin-left: -30px;
+    margin-bottom: -30px; */
+
+    
+
 }
 /* our team */
 .team {
@@ -283,6 +309,7 @@ color: var(--accent-color);
     color: var(--secondary-text);
     font-size: 16px;
     line-height: 1.87;
+    
 }
 
 /* footer */
