@@ -10,6 +10,7 @@
     --primary-font: 'Roboto', sans-serif;
     --logo-font : 'Raleway', sans-serif;
     --inner-border-color: ##EEEEEE;
+    --header-border-color: ##ECECEC;
 }
 p,
 h1,
@@ -47,6 +48,12 @@ body {
     letter-spacing: 0.03em;
 }
 
+.list {
+    font-style: normal;
+    margin: 0px;
+    padding: 0px;
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -71,22 +78,29 @@ a  {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
+    border: 1px solid red
 }
 
-.adv-section,
-.activities-section,
-.team {
-    padding-left: 215px;
+.header {
+    border-bottom: 1px solid var(--header-border-color);
+    
+    
 }
+
+.container.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content:
+}
+
 /* logo */
 .logo {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    font-family: var(--logo-font);
+    font-family: var(--logo-font); 
+         
 }
-
-
 .web {
 color: var(--accent-color);
 }
@@ -103,26 +117,53 @@ color: var(--accent-color);
 
 
 /* site nav */
-.site-nav {
+.navigation{    
+    display: flex;
+    align-items: center;
+    }
+.list.nav {
+    display: flex;
+    background-color: powderblue;
+        
+}
+.list .nav-item { 
+    margin-right: 50px;
+}
+.list .nav-item:last-child {
+    margin-right: 0px;
+}
+.list .nav-item {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+/* contact-list */
+
+.contact-list .contact-link + .contact-link {
+    margin-left: 50px; 
     
-    outline: 1px solid red;
+}
+.contact-list {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin-left: auto;
+    
     
 }
 .list.nav {
-    display: flex;
+    margin-left: 93px;
 }
-.contact-list {
-    background-color: yellowgreen;
-    
-}
-.site-nav :hover,
-.site-nav :focus {
+
+.navigation :hover,
+.navigation :focus {
     color: var(--hover-color);
 }
 .link{
     color : var(--primary-head-text)
 }
-.site-nav .link.current {
+.navigation .link.current {
     color: var(--accent-color);
 }
 .link, .contact-link {
@@ -239,11 +280,7 @@ color: var(--accent-color);
 
     
 }
-.list {
-    font-style: normal;
-    margin: 0px;
-    padding: 0px;
-}
+
 
 .list.project {
     outline: 2px solid red;
@@ -264,6 +301,12 @@ color: var(--accent-color);
     
     
 }
+
+/* .adv-section,
+.activities-section,
+.team {
+    padding-left: 215px;
+} */
 
 .employee {
     font-weight: 500;
